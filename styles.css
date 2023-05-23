@@ -1,0 +1,529 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.up_bar {
+    border-top: #BCBBBD40 2px solid;
+    position: absolute;
+    top: 132px;
+    left: 102px;
+    width: 85.6%;
+  
+
+}
+
+.left_bar{
+    border-left: #BCBBBD40 2px solid;
+    position: absolute;
+    top: 0px;
+    left: 102px;
+    width: 2%;
+    height: 1012%;
+    
+}
+   
+
+.right_bar {
+    border-right: #BCBBBD40 2px solid;
+    position: absolute;
+    top: 0px;
+    right: 102px;
+    width: 2%;
+    height: 1012%;
+   
+}
+
+/*Header*/
+
+/*Comprends l'introduction, le logo batman blanc, le menu,les boutons, les logos touches du droit et la fleche*/
+header {
+    background-image: url("Assets/Illustrations/Bathome1.png");
+    padding-top: 40px;
+    padding-left: 102px;
+    padding-right: 102px;
+}
+
+/*Comprends le logo batman dans le header et le menu home*/
+.menu {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+/*font du menu home*/
+nav ul li a {
+    font-family: 'Rajdhani';
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #FFFF00;
+}
+
+/*Logos droit*/
+#logos_right {
+    display: inline-flex;
+    flex-direction: column; 
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    right: 51px;
+    top: 50%;
+    gap: 20px;
+    z-index: 2;
+}
+
+/*Ce qui se trouve au milieu du background-image batman rouge avec la fleche du bas*/
+.baniere {
+    align-items:center;
+    justify-content:center;
+}
+
+/*texte et boutons de la baniere*/
+#sect1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+    gap: 25px
+}
+
+/*Premier paragraphe*/
+#introduction {
+    font-size: 18px;
+    font-family: 'Space Grotesk';
+    color: white;
+    text-align: center;
+}
+
+/*titre H1 page 1*/
+h2 {font-size: 30px;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/*Main*/
+
+/*élément du main*/
+#fleche {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding-bottom: 50px;
+}
+
+main {background-color: black;
+}
+
+/*texte descriptif en trois paragraphes*/
+.text {
+    text-align: justify; 
+    text-justify: inter-word;
+    padding-top: 35px;
+    padding-bottom: 90px;
+    padding-left: 165px;
+    padding-right: 300px; 
+ }
+
+ /*Les titres pour chaque description*/
+h1 {font-size: 36px;
+    font-family: 'Rajdhani';
+    font-weight: medium;
+    color: white;
+}
+
+ /*texte descriptif sans titraille*/
+ #description {
+    font-family: 'Space Grotesk';
+    font-size: 22px;
+    color: white;
+}
+
+/*Tous les paragraphes p*/
+p {
+    color: white;
+    text-align: justify;
+}
+
+/*Image portrait des trois paragraphes*/
+.pictures {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    gap: 95px;
+    transition-duration: 0.7s;
+    padding-bottom: 30px;   
+}
+
+.pictures :hover {
+    transform: scale(1.02);
+    transition-duration: 0.7s;
+}
+
+/*sous-titre de chaque figure*/
+figcaption {
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    font-weight: regular;
+    color:  white;
+    text-align: center;
+}
+
+/*h1 némésis et images batman en acier*/
+.h1_pictures {
+    padding-top: 70px;
+  
+}
+
+/*image du némésis*/
+#acier {
+    position: relative;
+    display:flex;
+    width: 12%;
+    margin: -95px 300px 0px 80px;   
+}
+
+/*Image batman mise en place au droit de la page*/
+.imagebatmanright {
+    display:flex;
+    width: 100%;
+    justify-content: right;
+    margin-top: -110px;
+    margin-bottom: -80px;
+}
+
+#batrt {
+    z-index: 1;
+}
+
+ /*texte h1 et p du justice league*/
+ .h3_text {
+    padding: 150px 220px 150px 250px;
+}
+
+/*Tous ce qui se trouvent dans le multimédia*/
+
+/*Toute la section multimédia*/
+.mediabat {
+    padding-left: 172px;
+    padding-right: 172px;
+
+}
+
+/*Mutimedia*/
+h3 {
+    font-size: 30px;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    color: white;
+}
+
+/*Fleches images et texte du multimedia*/
+.example {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+/*Image batman begins et texte*/
+.multimedia {
+    display: flex;
+    max-width: 600px;
+}
+
+/*Texte batman begins*/
+ .action {
+    background-image:linear-gradient(to bottom right, #EDDEBF, #19587D  );
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    padding: 20px 20px 0px 20px;
+    font-size: 12px;
+    font-family: 'Space Grotesk';
+    color: white;
+}
+
+#grand_titre {
+    font-family: 'Space Grotesk';
+    font-size: 12px;
+    font-weight: 300;
+    font-size-adjust: 0.58;
+}
+
+#titre_film {
+    font-family: 'Rajdhani';
+    font-size: 18px;
+}
+
+#number {
+    font-size: 15px;
+}
+
+#bruce {
+    text-align:inherit;
+}
+    
+span {
+    color: #FFFF00;
+}
+
+/*image batman video*/
+/*div image video*/
+#video {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    padding: 40px 102px 40px 102px ;
+}
+
+/*id image video*/
+#batnoir :hover {
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.471);
+}
+
+/*Formulaire*/
+
+/*Tous le formulaire*/
+.contact {
+    background-image: linear-gradient(to bottom right, #EDDEBF, #19587D  );
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+    padding: 70px 0;
+}
+
+/*class du div comprenant le formulaire*/
+.form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*class de Prenons contact h2*/
+.formulaire_h2 { 
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+/*class des adresse email newsletter et message*/
+.title {
+    display: block;
+    margin: 28px 0;
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+}
+
+/*Design de input et textarea*/
+.form .formulaire input[type='email'], textarea {
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    border-bottom: 2px solid #C4C4C4;
+    background-color: transparent;
+    padding: 10px 0;
+}
+::placeholder {
+    color : white;
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*Contenant texte et bouton du formulaire*/
+.formulaire {
+    max-width: fit-content;
+}
+
+/*Icone fleche dans le formulaire*/
+form .formulaire .icon_fleche img {
+    transform: rotate(90deg);
+    width: 25px;
+}
+
+/*Souhaitez-vous recevoir des news*/
+.choix {
+    margin: 15px 0;
+    border-bottom: 2px solid #C4C4C4;
+}
+
+/*Mise en forme de label news et de la classe choix*/
+[for="news"], .choix {
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    color: white;
+}
+
+/*les boutons des films des comics*/
+.btn_group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_group input[type='radio'] {
+    opacity: 0;
+}
+
+.btn_group label {
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(69deg, #EDDEBF, #19587D ) 1;
+    padding: 10px 25px;
+    font-size: 12px;
+    color: white
+}
+
+.btn_group label:hover {
+    background-image: linear-gradient(to right, #eddebf, #19587D);
+}
+
+input[type='submit'] {
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+}
+
+/*Design similaire des boutons dans le sect1 et dans le formulaire*/
+/*Les boutons en rouge et blanc comme les deux premiers et confirmer dans le formulaire*/ 
+/* rgba(237, 222, 191, 0.397), */
+.button {
+    background: linear-gradient(to right,rgba(237, 222, 191, 0.4), rgba(138, 0, 9, 0.4));
+    padding: 20px 60px 20px 60px;
+    border: none;
+    font-family: 'Rajdhani';
+    font-size: 22px;
+    font-weight: medium;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, #eddebf, #b11313);
+}
+
+#button-header {
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+ /*Logos boutons liens*/
+
+ /*Tous les logos ou icones blancs*/
+#l :hover {
+    filter: invert(20%) sepia(100%) saturate(2472%) hue-rotate(356deg) brightness(105%) contrast(103%);
+}
+
+/*section citation*/
+
+/*Toute la section*/
+.citation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+/*la citation seulement*/
+#cit {
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    text-align:  center;
+}
+
+/*Auteur*/
+#auteur {
+    font-family: 'Space Grotesk';
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Guillemets gauche*/
+#gleft {
+    padding-bottom: 20px;
+    padding-right: 820px;
+}
+
+/*Guillemets droit*/
+#gright {
+    padding-left: 820px;
+    padding-bottom: 10px;
+}
+
+/*footer*/
+
+footer {
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+/*Logos wb et texte*/
+.foot {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*texte du logos wb seulement*/
+#fin {
+    font-family: 'Space Grotesk';
+    font-size: 12px;
+    text-align: center;
+}
+
+/*Tous les logos du footer*/
+#logos_footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 150px;
+}
+
+/*les autres logos*/
+#logos_left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 20px;
+    padding-left: 510px;
+    gap: 15px;
+}
+
+/*logos reseaux sociaux*/
+#logos_footerr {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 500px;
+    padding-top: 20px;
+    gap: 40px; 
+}
+
+
+
+
+
+
